@@ -4,22 +4,22 @@ A simple Python package for measuring language model confidence using KL diverge
 
 ## Overview
 
-This package implements model confidence measurement using the self-certainty method from the paper ["Learning to Reason without External Rewards"](https://arxiv.org/abs/2505.19590). The approach measures how confident a model is in its predictions by computing the KL divergence between the model's output distribution and a uniform distribution.
+This package implements model confidence measurement using the self-certainty method from the paper ["Learning to Reason without External Rewards"](https://arxiv.org/abs/2505.19590). The approach measures how confident a model is in its predictions by computing the KL divergence between the model's output distribution and a uniform distribution. The closer the output logit distribution is to uniform, the less certain the model is of it's answer and vice-versa.
 
 ## Installation
 
 ```bash
-pip install -e .
+uv pip install -e .
 ```
 
 For development:
 ```bash
-pip install -e ".[dev]"
+uv pip install -e ".[dev]"
 ```
 
 For examples with visualization:
 ```bash
-pip install -e ".[examples]"
+uv pip install -e ".[examples]"
 ```
 
 ## Quick Start
